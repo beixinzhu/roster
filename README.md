@@ -5,7 +5,9 @@
 This is a tool for checking the compatability of Myucla, Piazza and Gradescope.
 
 To download the roster in MyUcla, please go to Class Roster -> Roster Download -> Comma-Separated
+
 To download the roster in Gradescope, please go to Assignments -> Download Grades -> Download CSV
+
 To download the roster in Piazza, please go to Management Enrollment -> Enroll Students -> Student Roster: Download Roster as CSV
 
 To use the tool under default settings, please put all three rosters under the same folder, rename them with myucla.csv, piazza.csv, gradescope.csv respectively. And run:
@@ -39,7 +41,9 @@ Please do NOT change the file layout after downloading.
 ## Matching Criteria
 
 To match Gradescope and MyUcla roster, we match simply by comparing UID (SID).
+
 To match MyUcla and Piazza roster, since Piazza does not contain UID, we will label "matched" when we found either email or name matched.
+
 To match names, since students may have different format of names registered (e.g first name + second name or inverse, nicknames or preferred names), we label two name "matched" when we found at least two words matched. For example:
 
         name1 = "David E. Smith"
