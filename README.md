@@ -14,12 +14,24 @@ To use the tool under default settings, please put all three rosters under the s
 
 You will see a file named result.csv in the same folder.
 
-To set the directory of read-in file and output file, please run:
+Usage: 
+        
+        roster.py [-h] [-m MYUCLA] [-p PIAZZA] [-g GRADESCOPE] [-s SAVE] [--separator SEPARATOR]
 
-        python roster.py -m PATHOF_MYUCLA_ROSTER.CSV -p PATHOF_PIAZZA_ROSTER.CSV -g PATHOF_GRADESCOPE_ROSTER.csv -s PATHOF_SAVE.CSV
+Optional arguments:
 
-or
-
-        python roster.py --myucla PATHOF_MYUCLA_ROSTER.CSV --piazza PATHOF_PIAZZA_ROSTER.CSV --gradescope PATHOF_GRADESCOPE_ROSTER.csv --save PATHOF_SAVE.CSV
+        -h, --help            show this help message and exit
+        -m MYUCLA, --myucla MYUCLA
+                        File name of MyUcla roster (default: ./myucla.csv)
+        -p PIAZZA, --piazza PIAZZA
+                        File name of Piazza roster (default: ./piazza.csv)
+        -g GRADESCOPE, --gradescope GRADESCOPE
+                        File name of Gradescope roster (default:
+                        ./gradescope.csv)
+        -s SAVE, --save SAVE  File name of Gradescope roster (default:
+                        ./gradescope.csv)
+        --separator SEPARATOR
+                        The separator of cells in the result csv file
+                        (default: comma(,))
 
 Please do NOT change the file layout after downloading.
