@@ -101,7 +101,7 @@ def main():
     # write result file
     # UID, name, email, enrolled, not in gradescope, not in piazza
     with open(args.save, 'wb') as csvfile:
-        writer = csv.writer(csvfile, delimiter=',')
+        writer = csv.writer(csvfile, delimiter=args.separator)
         writer.writerow(['UID', 'Name', 'Email', 'Enrolled?', 'In gradescope?', 'In piazza?'])
         for key in not_in_gradescope:
             writer.writerow([key, myucladict[key][0].replace(',',''), myucladict[key][1],'yes', 'no', '-'])
@@ -113,7 +113,7 @@ def main():
         for key in in_piazza_not_enrolled:
             writer.writerow(['-', piazzadict[key], key,'no', '-', 'yes'])
     print "Complete! Result file saved to "+ args.save
-    print "Please open the result csv file using separator: comma (,)"
+    print "Please open the result csv file using separator: " + args.separator
 
 if __name__ == "__main__":
     main()
