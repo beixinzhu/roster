@@ -35,3 +35,8 @@ Optional arguments:
                         (default: comma(,))
 
 Please do NOT change the file layout after downloading.
+
+-------------------
+## Apr 10 Update:
+
+Fix the csv file opening problem. You can open the csv file with the separator comma (,), or you can set the separator as the csv browser can recognize. 
